@@ -1,4 +1,5 @@
-let datePublished = document.querySelector('.published'),
+document.addEventListener('DOMContentLoaded', ()=>{
+    const datePublished = document.querySelector('.published'),
     a = new Date('04.19.22')
 datePublished.textContent += `${a.getDate()} 0${a.getMonth()} ${a.getFullYear()}р.`
 
@@ -44,3 +45,5 @@ getButon.addEventListener('click', () => {
     getModal.classList.remove('animate')
 })
 document.addEventListener('mouseleave', showModal)
+
+})
